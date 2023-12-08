@@ -1,0 +1,9 @@
+IP address: an internet protocol address used for communication that assigned in each device participating in a computer network.
+
+MAC address: a media access control address is a unique identifier that used for communication at the data link layer.
+
+Switches: are devices that operate at the data link layer, they forward data to specific devices within a network based on MAC addresses
+
+Routers: they use IP addresses to forward packets between different networks and operate at the network layer and connect multiple networks together 
+
+Routing: are a set of rules used by routers to determine the best path to forward packets
