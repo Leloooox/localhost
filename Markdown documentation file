@@ -6,4 +6,9 @@ Switches: are devices that operate at the data link layer, they forward data to 
 
 Routers: they use IP addresses to forward packets between different networks and operate at the network layer and connect multiple networks together 
 
-Routing: are a set of rules used by routers to determine the best path to forward packets
+Routing: are a set of rules used by routers to determine the best path to forward packets 
+
+*The steps to connect the cloud instance ?
+- secure shell protocol for remote login
+- need to software on local machine
+- connect to the instance using the following command : ssh alaa@public_ip_address 
