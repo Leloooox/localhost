@@ -1,0 +1,35 @@
+<?php
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$date = date('Y-m-d H:i:s');
+
+$servername = "localhost";
+$username = "my_user";
+$password = "my_password";
+$dbname = "my_db";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Prepare and bind the SQL statement
+$sql = "INSERT INTO visits (ip, date) VALUES (?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("ss", $ip, $date);
+
+// Execute the statement
+if ($stmt->execute()) {
+    echo "Welcome visitor from $ip! You visited at $date.";
+} else {
+    echo "Error: " . $stmt->error;
+}
+
+// Close connections
+$stmt->close();
+$conn->close();
+?>
+
