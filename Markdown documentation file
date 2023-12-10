@@ -1,3 +1,4 @@
+*Definitions:
 IP address: an internet protocol address used for communication that assigned in each device participating in a computer network.
 
 MAC address: a media access control address is a unique identifier that used for communication at the data link layer.
@@ -8,7 +9,11 @@ Routers: they use IP addresses to forward packets between different networks and
 
 Routing: are a set of rules used by routers to determine the best path to forward packets 
 
-*The steps to connect the cloud instance ?
+
+
+
+
+*The steps to connect the cloud instance :
 - secure shell protocol for remote login
 - need to software on local machine
 - connect to the instance using the following command : ssh alaa@public_ip_address 
