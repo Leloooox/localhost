@@ -1,0 +1,12 @@
+git init
+git status
+git add .
+git status
+└─$ git commit -m "First commit"  
+└─$ git config --global user.email "alaamuhammed1290@gmail.com"
+└─$ git config --global user.name "Leloooox"                   
+└─$ git config user.name                    
+└─$ git config user.email
+└─$ git commit -m "First commit"
+└─$ git remote add origin https://github.com/Leloooox/localhost.git      
+└─$ git push -u origin master                                      
