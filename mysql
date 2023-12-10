@@ -1,0 +1,5 @@
+Login to MySQL: sudo mysql -u root
+Create a database: CREATE DATABASE my_db;
+Create a user: CREATE USER my_user@localhost IDENTIFIED BY 'my_password';
+Grant access to the database: GRANT ALL PRIVILEGES ON my_db.* TO my_user@localhost;
+Exit MySQL: exit;
